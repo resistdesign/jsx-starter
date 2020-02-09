@@ -11,8 +11,8 @@ const nameList = [
   'yellow',
   'yellow green',
   'green',
-  'mint',
   'green aqua',
+  'aqua green',
   'aqua',
   'aqua blue',
   'blue',
@@ -20,7 +20,7 @@ const nameList = [
   'purple',
   'pink',
   'pink red',
-  'red'
+  'red pink'
 ];
 const segDist = 360 / nameList.length;
 const segmentList = nameList.map((v, i) => (
@@ -36,7 +36,7 @@ const segmentList = nameList.map((v, i) => (
         fill: 'none'
     }}
   />
-    <text x="10" y={(i * segDist) + 15} style={{fill: 'white'}}>{v}</text>
+    <text x="10" y={(i * segDist) + 16.5} style={{fill: 'white'}}>{v}</text>
   </Fragment>
 ));
 
